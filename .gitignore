@@ -3,14 +3,8 @@ __pycache__/
 .venv/
 .env
 .ipynb_checkpoints/
-
-# Dados: não versionar brutos (imagens); versionar processados
 data/raw/
-outputs/
-!outputs/.gitkeep
-data/processed/.cache/
-
-# IDEs e SO
+outputs/logs/
 .DS_Store
 .vscode/
 .idea/
