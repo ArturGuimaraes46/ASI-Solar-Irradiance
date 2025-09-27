@@ -1,8 +1,11 @@
-# ASI-Solar-Irradiance — All-Sky based GHI & PV Nowcasting (Natal/RN)
+# ASI-Solar-Irradiance — minimal repo (dados brutos fora do Git)
 
-Pipeline: (1) preprocessing (770×770 + circular mask) →
-(2) RGB/HSV segmentation (sun core+halo, clear-sky, cloud) →
-(3) hemispherical sampling (cos θ) + solar vector + Rodrigues rotation →
-(4) photometric luminance (γ^-1) + α-normalization → L_norm →
-(5) polynomial models (global & cloud-stratified) →
-(6) validation & metrics → (7) reproducible figures (Fig. 15–17).
+## Uso rápido
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+# Pré-processamento (exemplo)
+python scripts/asi.py preprocess --root "/caminho/Initial_Months_Data" --months 07 08 09 10 --exclude "/caminho/excluded_files.csv"
+
+# Figuras 15–17 a partir de CSV processado
+python scripts/asi.py figures --csv data/processed/ghi_models_2015.csv --out outputs/figures

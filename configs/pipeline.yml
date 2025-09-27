@@ -1,6 +1,0 @@
-general:
-  seed: 42
-  local_time_window: { start: "05:15", end: "17:30" }
-model:
-  degree: 3
-  cloud_bins: [0,10,20,30,40,50,60,70,80,90,100]
