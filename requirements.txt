@@ -1,8 +1,4 @@
 numpy>=1.26
 pandas>=2.2
-matplotlib>=3.8
 opencv-python>=4.10
-python-dateutil>=2.9
-scipy>=1.12
-pytest
-black
+matplotlib>=3.8
