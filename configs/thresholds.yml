@@ -1,0 +1,4 @@
+sun_core:   {hsv_v_min: 240}
+sun_halo:   {r_minus_g_min: 16}
+clear_sky:  {b_minus_g_min: 17}
+mask:       {center_x: 385, center_y: 385, radius: 385}

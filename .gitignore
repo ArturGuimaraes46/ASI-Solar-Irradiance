@@ -1,12 +1,16 @@
-__pycache__/ 
-*.pyc 
-.DS_Store 
-*.csv 
-*.xlsx 
-*.jpg 
-*.png 
-*.log 
-data/raw/ 
-data/station_data/ 
-notebooks/__pycache__/ 
-notebooks/.ipynb_checkpoints/ 
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.ipynb_checkpoints/
+
+# Dados: não versionar brutos (imagens); versionar processados
+data/raw/
+outputs/
+!outputs/.gitkeep
+data/processed/.cache/
+
+# IDEs e SO
+.DS_Store
+.vscode/
+.idea/
