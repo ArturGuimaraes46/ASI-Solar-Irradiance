@@ -1,0 +1,2 @@
+outputs/figures/* filter=lfs diff=lfs merge=lfs -text
+outputs/tables/* filter=lfs diff=lfs merge=lfs -text
